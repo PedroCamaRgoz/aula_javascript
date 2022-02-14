@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/main.js"> </script>
+    <title>Document</title>
+</head>
+<body onload="load()"> 
+    <h1>Minha Pagina</h1>
+    <button type="button" onclick="clicou()" >clique aqui</button>
+
+    <h3 id="agr" onclick="redirecionar()" ></h3>
+    <p id="mouseover" onmouseover="trocar()" > Passe o mouse aqui</p> 
+    <p id="mouseover" onmouseover="trocar(this)" onmouseout="voltar(this)" > Passe o mouse aqui</p> <!--  this = passa ele mesmo como paramento -->
+    <p id="mouseover2" onmouseover="trocar(this)" onmouseout="voltar(this)" > Passe o mouse aqui</p>
+
+    <select onchange="funcaochange(this)">
+
+        <option value="1">valor 1</option>
+        <option value="2">valor 2</option>
+        <option value="3">valor 3</option>
+
+    </select>
+
+
+    <div class="botao" >
+
+        <div class="botao1">
+            <p class="botao2"  onmouseover="botao3(this)" onmouseout="botao4(this)" > BOTÃO </p>
+        </div>
+
+    </div>
+</body>
+</html>
